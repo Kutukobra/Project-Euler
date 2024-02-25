@@ -80,19 +80,3 @@ _printStringLoop:
     syscall
     ret
 
-
-
-_readUINT:
-    sub rsp, 40
-
-    mov rax, 0
-    mov rdi, 0
-    lea rsi, [rsp]
-    add rsi, 4
-    syscall
-
-    xor rax, rax
-    mov rcx, rsp
-_accumulateLoop:
-    ;cmp rbp, rsp
-    ret
