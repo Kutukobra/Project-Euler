@@ -39,7 +39,7 @@ _addIterator:
 
 _skipAdding:
     inc DWORD [rsp + 0x4]
-    cmp DWORD [rsp + 0x4], 1000
+    cmp DWORD [rsp + 0x4], 100
     jl _accumulateLoop
 
 
